@@ -1,0 +1,71 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://rawgit.com/twbs/bootstrap/master/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://rawgit.com/wenzhixin/bootstrap-table/1.8.0/dist/bootstrap-table.css">
+<style type="text/css">
+pre {
+	border: 0;
+	background-color: transparent;
+	font-family: monospace;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+thead th {
+    background-color: #006DCC;
+    color: #212529;
+}
+tbody td {
+    background-color: #EEEEEE;
+}
+tr td:first-child,
+tr th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+tr td:last-child,
+tr th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.fixed-table-container tbody td {
+    border: none;
+}
+.fixed-table-container thead th {
+    border: none;
+}
+.bootstrap-table .table {
+	border-collapse: inherit !important;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://rawgit.com/twbs/bootstrap/master/dist/js/bootstrap.min.js"></script>
+<script src="https://rawgit.com/wenzhixin/bootstrap-table/1.8.0/dist/bootstrap-table-all.min.js"></script>
+</head>
+<body>
+<table data-toggle="table" data-striped="true">
+<thead><tr>
+<th data-align="left" data-sortable="true" data-valign='middle'>ID</th><th data-align="left" data-sortable="true" data-valign='middle'>Axiom</th><th data-align="left" data-sortable="true" data-valign='middle'>Axiom</th><th data-align="left" data-sortable="true" data-valign='middle'>NL</th><tbody>
+<tr>
+<td>1</td>
+<td>ObjectPropertyDomain(<http://example.com/father#hasChild> <http://example.com/father#person>)</td>
+<td>hasChild <b>Domain:</b> person</td>
+<td>The domain of the has children object property is a human. </td>
+</tr>
+<tr>
+<td>2</td>
+<td>SubClassOf(<http://example.com/father#male> <http://example.com/father#person>)</td>
+<td>male <b>SubClassOf:</b> person</td>
+<td>Every man is a human. </td>
+</tr>
+<tr>
+<td>3</td>
+<td>ObjectPropertyRange(<http://example.com/father#hasChild> <http://example.com/father#person>)</td>
+<td>hasChild <b>Range:</b> person</td>
+<td>The range of the has children object property is a human. </td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

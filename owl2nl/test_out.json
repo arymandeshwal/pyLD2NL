@@ -1,0 +1,33 @@
+[
+  {
+    "owl": "ObjectPropertyDomain(<http://example.com/father#hasChild> <http://example.com/father#person>)",
+    "dl": "∃ hasChild.⊤ ⊑ person",
+    "id": 0,
+    "manchester": [
+      "hasChild Domain person",
+      "person"
+    ],
+    "nl": "The domain of the has children object property is a human. "
+  },
+  {
+    "owl": "SubClassOf(<http://example.com/father#male> <http://example.com/father#person>)",
+    "dl": "male ⊑ person",
+    "id": 1,
+    "manchester": [
+      "male SubClassOf person",
+      "male",
+      "person"
+    ],
+    "nl": "Every man is a human. "
+  },
+  {
+    "owl": "ObjectPropertyRange(<http://example.com/father#hasChild> <http://example.com/father#person>)",
+    "dl": "⊤ ⊑ ∀ hasChild.person",
+    "id": 2,
+    "manchester": [
+      "hasChild Range person",
+      "person"
+    ],
+    "nl": "The range of the has children object property is a human. "
+  }
+]
